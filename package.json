@@ -2,7 +2,7 @@
   "name": "first-brain-games",
   "version": "1.0.0",
   "description": "Console mini brain games",
-  "main": "",
+  "main": "dist/bin/brain-games.js",
   "bin": {
     "brain-games": "dist/bin/brain-games.js"
   },
