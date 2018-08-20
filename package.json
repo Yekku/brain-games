@@ -4,11 +4,11 @@
   "description": "Console mini brain games",
   "main": "",
   "scripts": {
-    "test": "jest"
+    "babel-node": "babel-node"
   },
   "repository": {
     "type": "git",
-    "url": "y"
+    "url": "git+https://github.com/Yekku/project-lvl1-s328.git"
   },
   "keywords": [
     "brain-games"
