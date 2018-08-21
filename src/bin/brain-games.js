@@ -1,3 +1,5 @@
 #!/usr/bin/env node
 
-import readlineSync from '..';
+import newGame from '../games/brain';
+
+newGame();
