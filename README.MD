@@ -16,4 +16,4 @@ At the moment we have include games listed below:
 
   To start game type ```brain-even``` into terminal!
 
-  <iframe src="https://asciinema.org/a/1P1LjdGJptv2lLQTnpJG9qSdk" width="500" height="300" />
+  [![asciicast](https://asciinema.org/a/1P1LjdGJptv2lLQTnpJG9qSdk.png)](https://asciinema.org/a/1P1LjdGJptv2lLQTnpJG9qSdk)
