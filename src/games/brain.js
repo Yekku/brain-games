@@ -1,5 +1,7 @@
+import { cons } from 'hexlet-pairs';
 import { newGame } from '..';
 
-export default newGame;
+const rule = '';
+const game = () => cons('', '');
 
-
+export default () => newGame(game, rule);

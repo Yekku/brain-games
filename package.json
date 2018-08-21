@@ -1,8 +1,8 @@
 {
   "name": "first-brain-games",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Console mini brain games",
-  "main": "",
+  "main": "dist/index.js",
   "bin": {
     "brain-games": "dist/bin/brain-games.js",
     "brain-even": "dist/bin/brain-even.js"
@@ -25,6 +25,10 @@
   ],
   "author": "yekku",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gegorov/project-lvl1-s328/issues"
+  },
+  "homepage": "https://github.com/gegorov/project-lvl1-s328#readme",
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.3",
@@ -33,9 +37,11 @@
     "babel-preset-stage-0": "^6.24.1",
     "eslint": "^5.4.0",
     "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-babel": "^5.1.0",
     "eslint-plugin-import": "^2.14.0"
   },
   "dependencies": {
+    "hexlet-pairs": "^1.0.8",
     "readline-sync": "^1.4.9"
   }
 }
