@@ -1,11 +1,12 @@
 {
   "name": "first-brain-games",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Console mini brain games",
   "main": "dist/index.js",
   "bin": {
     "brain-games": "dist/bin/brain-games.js",
-    "brain-even": "dist/bin/brain-even.js"
+    "brain-even": "dist/bin/brain-even.js",
+    "brain-calc": "dist/bin/brain-calc.js"
   },
   "files": [
     "dist"
@@ -26,9 +27,9 @@
   "author": "yekku",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/gegorov/project-lvl1-s328/issues"
+    "url": "https://github.com/Yekku/project-lvl1-s328/issues"
   },
-  "homepage": "https://github.com/gegorov/project-lvl1-s328#readme",
+  "homepage": "https://github.com/Yekku/project-lvl1-s328#readme",
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.3",

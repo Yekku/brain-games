@@ -28,7 +28,7 @@ const engine = (name, rounds, game) => {
     console.log(winMessage(name));
     return 0;
   }
-  // console.log(`##### DEBUG print. question: ${question}, answer: ${correctAnswer}`);
+
   askQuestion(question);
   const answer = readlineSync.question('Your answer: ');
   if (answer !== correctAnswer) {

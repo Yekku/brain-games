@@ -17,3 +17,11 @@ At the moment we have include games listed below:
   To start game type ```brain-even``` into terminal!
 
   [![asciicast](https://asciinema.org/a/qtzuXirD7yFfUMd2jlKDJ59tB.png)](https://asciinema.org/a/qtzuXirD7yFfUMd2jlKDJ59tB)
+
+  - **Calc game**
+
+  What is the result of the expression?
+
+  To start game type ```brain-calc``` into terminal!
+
+  [![asciicast](https://asciinema.org/a/sssPi4viHHdARkqLc4MZzPsOx.png)](https://asciinema.org/a/sssPi4viHHdARkqLc4MZzPsOx)
