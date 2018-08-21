@@ -18,10 +18,18 @@ At the moment we have include games listed below:
 
   [![asciicast](https://asciinema.org/a/qtzuXirD7yFfUMd2jlKDJ59tB.png)](https://asciinema.org/a/qtzuXirD7yFfUMd2jlKDJ59tB)
 
-  - **Calc game**
+- **Calc game**
 
   What is the result of the expression?
 
   To start game type ```brain-calc``` into terminal!
 
   [![asciicast](https://asciinema.org/a/sssPi4viHHdARkqLc4MZzPsOx.png)](https://asciinema.org/a/sssPi4viHHdARkqLc4MZzPsOx)
+
+- **GCD game**
+
+  Find the greatest common divisor of given numbers.
+
+  To start game type ```brain-gcd``` into terminal!
+
+  [![asciicast](https://asciinema.org/a/AZPAbko7WTKqiHmwdBeCuJtVH.png)](https://asciinema.org/a/AZPAbko7WTKqiHmwdBeCuJtVH)
