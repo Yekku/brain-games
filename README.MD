@@ -47,3 +47,5 @@ At the moment we have include games listed below:
   What number is missing in this progression?
 
   To start game type ```brain-progression``` into terminal!
+
+  <script src="https://asciinema.org/a/lHsar1XgyqdyLJ8KMXEDAy1Ky.js" id="asciicast-lHsar1XgyqdyLJ8KMXEDAy1Ky" async></script>
