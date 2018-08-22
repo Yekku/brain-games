@@ -33,3 +33,11 @@ At the moment we have include games listed below:
   To start game type ```brain-gcd``` into terminal!
 
   [![asciicast](https://asciinema.org/a/AZPAbko7WTKqiHmwdBeCuJtVH.png)](https://asciinema.org/a/AZPAbko7WTKqiHmwdBeCuJtVH)
+
+- **Balance game**
+
+  Balance the given number.
+
+  To start game type ```brain-balance``` into terminal!
+
+  [![asciicast](https://asciinema.org/a/geiEB0H9uSpnbsdzjUWiuu3F0.png)](https://asciinema.org/a/geiEB0H9uSpnbsdzjUWiuu3F0)
