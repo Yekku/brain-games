@@ -25,7 +25,6 @@ const balance = () => {
   return cons(question, answer);
 };
 
-const game = () => {
-  gameFlow(balance, rule);
-};
+const game = () => gameFlow(balance, rule);
+
 export default game;

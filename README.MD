@@ -41,3 +41,9 @@ At the moment we have include games listed below:
   To start game type ```brain-balance``` into terminal!
 
   [![asciicast](https://asciinema.org/a/geiEB0H9uSpnbsdzjUWiuu3F0.png)](https://asciinema.org/a/geiEB0H9uSpnbsdzjUWiuu3F0)
+
+- **Progression game**
+
+  What number is missing in this progression?
+
+  To start game type ```brain-progression``` into terminal!
