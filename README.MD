@@ -49,3 +49,13 @@ At the moment we have include games listed below:
   To start game type ```brain-progression``` into terminal!
 
   [![asciicast](https://asciinema.org/a/lHsar1XgyqdyLJ8KMXEDAy1Ky.png)](https://asciinema.org/a/lHsar1XgyqdyLJ8KMXEDAy1Ky)
+
+- **Prime game**
+
+  Is this number prime?
+
+  A number n is prime if it is greater than 1 and has no positive divisors except 1 and n.
+
+  To start game type ```brain-prime``` into terminal!
+
+  [![asciicast](https://asciinema.org/a/cE13o3DioXg0zMCyQR5mXOZoT.png)](https://asciinema.org/a/cE13o3DioXg0zMCyQR5mXOZoT)
