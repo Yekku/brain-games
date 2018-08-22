@@ -1,34 +1,54 @@
-// Calc game logic
 import { cons } from 'hexlet-pairs';
-import { newGame, getRandomNumber } from '..';
+import gameFlow from '..';
+import getRandomNumber from '../utils';
 
 const rule = 'What is the result of the expression?';
+const operators = ['+', '-', '*'];
+const randomIndex = Math.floor(Math.random() * 3);
+const randomOperator = operators[randomIndex];
+
 const calc = () => {
-  const calculator = (operator, num1, num2) => {
-    if (operator === '-') {
-      return num1 - num2;
-    } if (operator === '+') {
-      return num1 + num2;
-    }
-    return num1 * num2;
-  };
+  const firstNum = getRandomNumber(1, 99);
+  const secondNum = getRandomNumber(1, 99);
+  const question = `${firstNum} ${randomOperator} ${secondNum}`;
+  let answer;
 
-  const randomOperator = () => {
-    const random = getRandomNumber(1, 4);
-    switch (random) {
-      case 1: return '-';
-      case 2: return '+';
-      default: return '*';
-    }
-  };
-
-  const num1 = getRandomNumber(1, 99);
-  const num2 = getRandomNumber(1, 99);
-  const operator = randomOperator();
-  const question = `${num1} ${operator} ${num2}`;
-  const answer = `${calculator(operator, num1, num2)}`;
-
+  switch (randomOperator) {
+    case '+':
+      answer = String(firstNum + secondNum);
+      break;
+    case '-':
+      answer = String(firstNum - secondNum);
+      break;
+    default:
+      answer = String(firstNum * secondNum);
+  }
   return cons(question, answer);
 };
+// const operators = ['+', '-', '*'];
+// const randomIndex = Math.floor(Math.random() * 3);
+// const randomOperator = operators[randomIndex];
 
-export default () => newGame(calc, rule);
+// const calc = () => {
+//   const calculator = (operator, num1, num2) => {
+//     switch (operator) {
+//       case '-': return num1 - num2;
+//       case '+': return num1 + num2;
+//       default: return num1 * num2;
+//     }
+//   };
+
+//   const num1 = getRandomNumber(1, 99);
+//   const num2 = getRandomNumber(1, 99);
+//   const operator = randomOperator();
+//   const question = `${num1} ${operator} ${num2}`;
+//   const answer = `${calculator(operator, num1, num2)}`;
+
+//   return cons(question, answer);
+// };
+
+const game = () => {
+  gameFlow(calc, rule);
+};
+
+export default game;

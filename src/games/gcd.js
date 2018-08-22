@@ -1,6 +1,6 @@
-// GSD game logic
 import { cons } from 'hexlet-pairs';
-import { newGame, getRandomNumber } from '..';
+import gameFlow from '..';
+import getRandomNumber from '../utils';
 
 const rule = 'Find the greatest common divisor of given numbers.';
 
@@ -26,4 +26,8 @@ const greatestCommonDivisor = () => {
   return cons(question, answer);
 };
 
-export default () => newGame(greatestCommonDivisor, rule);
+const game = () => {
+  gameFlow(greatestCommonDivisor, rule);
+};
+
+export default game;

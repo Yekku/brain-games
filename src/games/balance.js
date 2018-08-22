@@ -1,6 +1,6 @@
-// Balance game logic
 import { cons } from 'hexlet-pairs';
-import { newGame, getRandomNumber } from '..';
+import gameFlow from '..';
+import getRandomNumber from '../utils';
 
 const rule = 'Balance the given number.';
 
@@ -25,4 +25,7 @@ const balance = () => {
   return cons(question, answer);
 };
 
-export default () => newGame(balance, rule);
+const game = () => {
+  gameFlow(balance, rule);
+};
+export default game;

@@ -1,6 +1,6 @@
-// Even game logic
 import { cons } from 'hexlet-pairs';
-import { newGame, getRandomNumber } from '..';
+import gameFlow from '..';
+import getRandomNumber from '../utils';
 
 const rule = 'Answer "yes" if number even otherwise answer "no".';
 
@@ -11,4 +11,7 @@ const even = () => {
   return cons(question, answer);
 };
 
-export default () => newGame(even, rule);
+const game = () => {
+  gameFlow(even, rule);
+};
+export default game;

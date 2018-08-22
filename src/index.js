@@ -1,57 +1,35 @@
 import readlineSync from 'readline-sync';
 import { car, cdr } from 'hexlet-pairs';
 
-const welcomeMessage = () => console.log('Welcome to the Brain Games!');
-const getName = () => readlineSync.question('May I have your name?: ');
-const getRandomNumber = (min, max) => Math.floor(Math.random() * (max - min)) + min;
+const numberOfRounds = 3;
 
-const getQuestion = game => car(game);
-const getCorrectAnswer = game => cdr(game);
-
-const GAME_ROUNDS = 3;
-
-const winMessage = name => `Congratulations, ${name}!`;
-const failMessage = (name, wrongAnswer, correctAnswer) => `'${wrongAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.
-Let's try again, ${name}!`;
-const correctAnswerMessage = 'Correct!';
-
-const askQuestion = question => console.log(`Question: ${question}`);
-
-
-const engine = (name, rounds, game) => {
-  const round = game();
-
-  const question = getQuestion(round);
-  const correctAnswer = getCorrectAnswer(round);
-
-  if (rounds === 0) {
-    console.log(winMessage(name));
-    return 0;
+const playGame = (taskAndSolution, counter) => {
+  if (counter === 0) {
+    return true;
   }
-
-  askQuestion(question);
-  const answer = readlineSync.question('Your answer: ');
-  if (answer !== correctAnswer) {
-    console.log(failMessage(name, answer, correctAnswer));
-    return 0;
+  const newQuestion = taskAndSolution();
+  const askQuestion = car(newQuestion);
+  const answer = cdr(newQuestion);
+  console.log(`Question: ${askQuestion}`);
+  const userAnswer = readlineSync.question('Your answer: ');
+  if (userAnswer === answer) {
+    console.log('Correct!');
+    return playGame(taskAndSolution, counter - 1);
   }
-  console.log(correctAnswerMessage);
-
-  return engine(name, rounds - 1, game);
+  console.log(`Sorry, '${userAnswer}' is wrong answer ;(. Correct answer was '${answer}'`);
+  return false;
 };
 
-const newGame = (game, rule) => {
-  welcomeMessage();
-
-  const playerName = getName();
-  console.log(`Hello, ${playerName}!\n`);
-
-  if (rule === '') {
-    return 0;
-  }
-
+const gameFlow = (taskAndSolution, rule) => {
+  console.log('Welcome to the Brain Games!');
   console.log(rule);
-  return engine(playerName, GAME_ROUNDS, game);
+  const name = readlineSync.question('May I have your name? ');
+  console.log(`Hello, ${name}!\n`);
+  const isWin = playGame(taskAndSolution, numberOfRounds);
+  if (isWin) {
+    return console.log(`Congratulations, ${name}!`);
+  }
+  return console.log(`Let's try again, ${name}!`);
 };
 
-export { newGame, getRandomNumber };
+export default gameFlow;
