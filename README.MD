@@ -48,4 +48,4 @@ At the moment we have include games listed below:
 
   To start game type ```brain-progression``` into terminal!
 
-  <script src="https://asciinema.org/a/lHsar1XgyqdyLJ8KMXEDAy1Ky.js" id="asciicast-lHsar1XgyqdyLJ8KMXEDAy1Ky" async></script>
+  [![asciicast](https://asciinema.org/a/lHsar1XgyqdyLJ8KMXEDAy1Ky.png)](https://asciinema.org/a/lHsar1XgyqdyLJ8KMXEDAy1Ky)
