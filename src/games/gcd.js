@@ -24,6 +24,4 @@ const greatestCommonDivisor = () => {
   return cons(question, answer);
 };
 
-const game = () => gameFlow(greatestCommonDivisor, rule);
-
-export default game;
+export default () => gameFlow(greatestCommonDivisor, rule);

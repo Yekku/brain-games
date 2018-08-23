@@ -12,6 +12,4 @@ const even = () => {
   return cons(question, answer);
 };
 
-const game = () => gameFlow(even, rule);
-
-export default game;
+export default () => gameFlow(even, rule);

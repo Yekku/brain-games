@@ -10,6 +10,17 @@ To install **First Brain Games** type ```npm i -g first-brain-games``` into term
 
 At the moment we have include games listed below:
 
+1) brain-even
+2) brain-calc
+3) brain-gcd
+4) brain-balance
+5) brain-progression
+6) brain-prime
+
+You can call the menu via ```npm start brain-game``` or simple ```brain-game```.
+
+To immediately start the specific game without a menu, use its name exactly as it is written above the line.
+
 - **Even game**
 
   You have to answer if shown number is even or not.

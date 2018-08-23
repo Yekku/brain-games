@@ -26,6 +26,4 @@ const calc = () => {
   return cons(question, answer);
 };
 
-const game = () => gameFlow(calc, rule);
-
-export default game;
+export default () => gameFlow(calc, rule);

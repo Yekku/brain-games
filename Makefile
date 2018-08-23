@@ -7,6 +7,9 @@ publish:
 lint:
 	npm run eslint .
 
+start:
+	npm run babel-node -- src/bin/brain-game.js
+
 start-even:
 	npm run babel-node -- src/bin/brain-even.js
 

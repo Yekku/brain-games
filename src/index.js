@@ -16,15 +16,15 @@ const playGame = (taskAndSolution, counter) => {
     console.log('Correct!');
     return playGame(taskAndSolution, counter - 1);
   }
-  console.log(`Sorry, '${userAnswer}' is wrong answer ;(. Correct answer was '${answer}'`);
+  console.log(`Sorry, '${userAnswer}' is wrong answer ;(. Correct answer was '${answer}'\n`);
   return false;
 };
 
 const gameFlow = (taskAndSolution, rule) => {
-  console.log('Welcome to the Brain Games!');
-  console.log(rule);
+  console.log('Welcome to the Brain Games!\n');
   const name = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${name}!\n`);
+  console.log(rule);
   const isWin = playGame(taskAndSolution, numberOfRounds);
   if (isWin) {
     return console.log(`Congratulations, ${name}!`);

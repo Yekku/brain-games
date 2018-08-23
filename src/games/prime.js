@@ -23,6 +23,4 @@ const prime = () => {
   return cons(question, answer);
 };
 
-const game = () => gameFlow(prime, rule);
-
-export default game;
+export default () => gameFlow(prime, rule);

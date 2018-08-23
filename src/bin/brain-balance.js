@@ -1,4 +1,5 @@
 #!/usr/bin/env node
-import game from '../games/balance';
 
-game();
+import balanceGame from '../games/balance';
+
+balanceGame();

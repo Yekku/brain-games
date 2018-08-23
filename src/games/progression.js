@@ -5,10 +5,10 @@ import getRandomNumber from '../utils';
 const rule = 'What number is missing in this progression?';
 const progressionLength = 10;
 
-const generateProgression = (startNumber, stepValue) => {
+const generateProgression = (num1, num2) => {
   const mathProgression = [];
   for (let i = 0; i < progressionLength; i += 1) {
-    mathProgression.push(startNumber + stepValue * i);
+    mathProgression.push(num1 + num2 * i);
   }
   return mathProgression;
 };
@@ -24,6 +24,4 @@ const progression = () => {
   return cons(question, answer);
 };
 
-const game = () => gameFlow(progression, rule);
-
-export default game;
+export default () => gameFlow(progression, rule);
