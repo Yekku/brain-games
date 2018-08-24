@@ -1,4 +1,5 @@
 import readlineSync from 'readline-sync';
+import colors from 'colors/safe';
 import evenGame from './even';
 import calcGame from './calc';
 import gcdGame from './gcd';
@@ -7,7 +8,7 @@ import progressionGame from './progression';
 import primeGame from './prime';
 
 const choice = () => {
-  const choiceGame = () => readlineSync.question(`What game would you like to play?\n
+  const choiceGame = () => readlineSync.question(colors.cyan(`What game would you like to play?\n
 Select the number of the game!
 
   1) brain-even
@@ -17,7 +18,7 @@ Select the number of the game!
   5) brain-progression
   6) brain-prime
 
-Number: `);
+Number: `));
 
   switch (choiceGame()) {
     case '1':

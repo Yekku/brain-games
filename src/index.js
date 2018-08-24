@@ -1,5 +1,7 @@
 import readlineSync from 'readline-sync';
 import { car, cdr } from 'hexlet-pairs';
+import colors from 'colors/safe';
+import exit from './exit';
 
 const numberOfRounds = 3;
 
@@ -13,23 +15,24 @@ const playGame = (taskAndSolution, counter) => {
   console.log(`Question: ${askQuestion}`);
   const userAnswer = readlineSync.question('Your answer: ');
   if (userAnswer === answer) {
-    console.log('Correct!');
+    console.log(colors.green('Correct!'));
     return playGame(taskAndSolution, counter - 1);
   }
-  console.log(`Sorry, '${userAnswer}' is wrong answer ;(. Correct answer was '${answer}'\n`);
-  return false;
+  return console.log(colors.red(`Sorry, '${userAnswer}' is wrong answer ;(. Correct answer was '${answer}'\n`));
 };
 
 const gameFlow = (taskAndSolution, rule) => {
-  console.log('Welcome to the Brain Games!\n');
+  console.log(colors.rainbow('Welcome to the Brain Games!\n'));
   const name = readlineSync.question('May I have your name? ');
-  console.log(`Hello, ${name}!\n`);
-  console.log(rule);
+  console.log(colors.yellow(`Hello, ${name}!\n`));
+  console.log(colors.blue(rule));
   const isWin = playGame(taskAndSolution, numberOfRounds);
   if (isWin) {
-    return console.log(`Congratulations, ${name}!`);
+    console.log(colors.underline.green(`Congratulations, ${name}!`));
+    return exit();
   }
-  return console.log(`Let's try again, ${name}!`);
+  console.log(colors.magenta(`Let's try again, ${name}!`));
+  return exit();
 };
 
 export default gameFlow;
