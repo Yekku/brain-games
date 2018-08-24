@@ -21,6 +21,8 @@ You can call the menu via ```npm start brain-game``` or simple ```brain-game```.
 
 To immediately start the specific game without a menu, use its name exactly as it is written above the line.
 
+[![asciicast](https://asciinema.org/a/GMjVDk786l7qQDlKyLPEwnSKM.png)](https://asciinema.org/a/GMjVDk786l7qQDlKyLPEwnSKM)
+
 - **Even game**
 
   You have to answer if shown number is even or not.
