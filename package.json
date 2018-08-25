@@ -23,7 +23,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Yekku/project-lvl1-s328.git"
+    "url": "git+https://github.com/Yekku/brain-games.git"
   },
   "keywords": [
     "brain-games"
@@ -31,9 +31,9 @@
   "author": "yekku",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Yekku/project-lvl1-s328/issues"
+    "url": "https://github.com/Yekku/brain-games/issues"
   },
-  "homepage": "https://github.com/Yekku/project-lvl1-s328#readme",
+  "homepage": "https://github.com/Yekku/brain-games#readme",
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.3",
