@@ -1,5 +1,6 @@
 # Brain Games
 
+[![CI](https://github.com/Yekku/brain-games/actions/workflows/ci.yml/badge.svg)](https://github.com/Yekku/brain-games/actions/workflows/ci.yml)
 [![Maintainability](https://api.codeclimate.com/v1/badges/b1e9bd640f2e55af04eb/maintainability)](https://codeclimate.com/github/Yekku/brain-games/maintainability)
 
 **Welcome to the First Brain Games!**
