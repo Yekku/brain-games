@@ -1,6 +1,6 @@
-import { cons } from 'hexlet-pairs';
-import gameFlow from '..';
-import getRandomNumber from '../utils';
+import { cons } from '@hexlet/pairs';
+import gameFlow from '../index.js';
+import getRandomNumber from '../utils.js';
 
 const rule = 'Is this number prime?';
 

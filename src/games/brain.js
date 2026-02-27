@@ -1,14 +1,14 @@
 import readlineSync from 'readline-sync';
-import colors from 'colors/safe';
-import evenGame from './even';
-import calcGame from './calc';
-import gcdGame from './gcd';
-import balanceGame from './balance';
-import progressionGame from './progression';
-import primeGame from './prime';
+import chalk from 'chalk';
+import evenGame from './even.js';
+import calcGame from './calc.js';
+import gcdGame from './gcd.js';
+import balanceGame from './balance.js';
+import progressionGame from './progression.js';
+import primeGame from './prime.js';
 
 const choice = () => {
-  const choiceGame = () => readlineSync.question(colors.cyan(`What game would you like to play?\n
+  const choiceGame = () => readlineSync.question(chalk.cyan(`What game would you like to play?\n
 Select the number of the game!
 
   1) brain-even

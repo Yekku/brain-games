@@ -1,3 +1,16 @@
+help:
+	@echo "Available commands:"
+	@echo "  make install           Install dependencies"
+	@echo "  make lint              Run ESLint"
+	@echo "  make start             Launch main menu"
+	@echo "  make start-even        Launch even game"
+	@echo "  make start-calc        Launch calc game"
+	@echo "  make start-gcd         Launch gcd game"
+	@echo "  make start-balance     Launch balance game"
+	@echo "  make start-progression Launch progression game"
+	@echo "  make start-prime       Launch prime game"
+	@echo "  make publish           Publish to npm"
+
 install:
 	npm install
 
@@ -5,25 +18,28 @@ publish:
 	npm publish
 
 lint:
-	npm run eslint .
+	npx eslint .
 
 start:
-	npm run babel-node -- src/bin/brain-game.js
+	node src/bin/brain-game.js
 
 start-even:
-	npm run babel-node -- src/bin/brain-even.js
+	node src/bin/brain-even.js
 
 start-calc:
-	npm run babel-node -- src/bin/brain-calc.js
+	node src/bin/brain-calc.js
 
 start-gcd:
-	npm run babel-node -- src/bin/brain-gcd.js
+	node src/bin/brain-gcd.js
 
 start-balance:
-	npm run babel-node -- src/bin/brain-balance.js
+	node src/bin/brain-balance.js
 
 start-progression:
-	npm run babel-node -- src/bin/brain-progression.js
+	node src/bin/brain-progression.js
 
 start-prime:
-	npm run babel-node -- src/bin/brain-prime.js
+	node src/bin/brain-prime.js
+
+.PHONY: help install publish lint start start-even start-calc start-gcd start-balance start-progression start-prime
+.DEFAULT_GOAL := help

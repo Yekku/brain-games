@@ -1,6 +1,6 @@
-import { cons } from 'hexlet-pairs';
-import gameFlow from '..';
-import getRandomNumber from '../utils';
+import { cons } from '@hexlet/pairs';
+import gameFlow from '../index.js';
+import getRandomNumber from '../utils.js';
 
 const rule = 'What number is missing in this progression?';
 const progressionLength = 10;

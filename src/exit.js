@@ -1,6 +1,6 @@
 import readlineSync from 'readline-sync';
-import colors from 'colors/safe';
-import choice from './games/brain';
+import chalk from 'chalk';
+import choice from './games/brain.js';
 
 const playOrExit = () => readlineSync.question(`Would You play another game?\n
 Answer "yes" for return to menu,
@@ -10,7 +10,7 @@ const exit = () => {
   if (playOrExit() === 'yes') {
     choice();
   }
-  return console.log(colors.yellow('Thank You!'));
+  return console.log(chalk.yellow('Thank You!'));
 };
 
 export default exit;

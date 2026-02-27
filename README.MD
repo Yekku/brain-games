@@ -1,75 +1,99 @@
-#
+# Brain Games
 
-[![Maintainability](https://api.codeclimate.com/v1/badges/b1e9bd640f2e55af04eb/maintainability)](https://codeclimate.com/github/Yekku/brain-games/maintainability) [![Test Coverage](https://api.codeclimate.com/v1/badges/b1e9bd640f2e55af04eb/test_coverage)](https://codeclimate.com/github/Yekku/brain-games/test_coverage) [![Build Status](https://travis-ci.org/Yekku/brain-games.svg?branch=master)](https://travis-ci.org/Yekku/brain-games)
+[![Maintainability](https://api.codeclimate.com/v1/badges/b1e9bd640f2e55af04eb/maintainability)](https://codeclimate.com/github/Yekku/brain-games/maintainability)
 
 **Welcome to the First Brain Games!**
 
-This is actually a terminal game that consists of different maths tasks.
-**Installation**
+A terminal game that consists of different maths tasks.
 
-To install **First Brain Games** type ```npm i -g first-brain-games``` into terminal!
+## Requirements
 
-At the moment we have include games listed below:
+Node.js >= 18.0.0
 
-1) brain-even
-2) brain-calc
-3) brain-gcd
-4) brain-balance
-5) brain-progression
-6) brain-prime
+## Installation
 
-You can call the menu via ```npm start brain-game``` or simple ```brain-game```.
+```bash
+npm i -g first-brain-games
+```
 
-To immediately start the specific game without a menu, use its name exactly as it is written above the line.
+## Available Games
+
+1. brain-even
+2. brain-calc
+3. brain-gcd
+4. brain-balance
+5. brain-progression
+6. brain-prime
+
+You can call the menu via `brain-game` or `npm start`.
+
+To immediately start a specific game without the menu, use its name directly (e.g. `brain-even`).
+
+### Development
+
+```bash
+make install          # Install dependencies
+make lint             # Run ESLint
+make start            # Launch main menu
+make start-even       # Launch even game
+make start-calc       # Launch calc game
+make start-gcd        # Launch gcd game
+make start-balance    # Launch balance game
+make start-progression # Launch progression game
+make start-prime      # Launch prime game
+make publish          # Publish to npm
+```
 
 [![asciicast](https://asciinema.org/a/GMjVDk786l7qQDlKyLPEwnSKM.png)](https://asciinema.org/a/GMjVDk786l7qQDlKyLPEwnSKM)
 
-- **Even game**
+## Games
 
-  You have to answer if shown number is even or not.
+- **Even game** — Answer if a number is even or not.
 
-  To start game type ```brain-even``` into terminal!
+  ```bash
+  brain-even
+  ```
 
   [![asciicast](https://asciinema.org/a/qtzuXirD7yFfUMd2jlKDJ59tB.png)](https://asciinema.org/a/qtzuXirD7yFfUMd2jlKDJ59tB)
 
-- **Calc game**
+- **Calc game** — What is the result of the expression?
 
-  What is the result of the expression?
-
-  To start game type ```brain-calc``` into terminal!
+  ```bash
+  brain-calc
+  ```
 
   [![asciicast](https://asciinema.org/a/sssPi4viHHdARkqLc4MZzPsOx.png)](https://asciinema.org/a/sssPi4viHHdARkqLc4MZzPsOx)
 
-- **GCD game**
+- **GCD game** — Find the greatest common divisor of given numbers.
 
-  Find the greatest common divisor of given numbers.
-
-  To start game type ```brain-gcd``` into terminal!
+  ```bash
+  brain-gcd
+  ```
 
   [![asciicast](https://asciinema.org/a/AZPAbko7WTKqiHmwdBeCuJtVH.png)](https://asciinema.org/a/AZPAbko7WTKqiHmwdBeCuJtVH)
 
-- **Balance game**
+- **Balance game** — Balance the given number.
 
-  Balance the given number.
-
-  To start game type ```brain-balance``` into terminal!
+  ```bash
+  brain-balance
+  ```
 
   [![asciicast](https://asciinema.org/a/geiEB0H9uSpnbsdzjUWiuu3F0.png)](https://asciinema.org/a/geiEB0H9uSpnbsdzjUWiuu3F0)
 
-- **Progression game**
+- **Progression game** — What number is missing in this progression?
 
-  What number is missing in this progression?
-
-  To start game type ```brain-progression``` into terminal!
+  ```bash
+  brain-progression
+  ```
 
   [![asciicast](https://asciinema.org/a/lHsar1XgyqdyLJ8KMXEDAy1Ky.png)](https://asciinema.org/a/lHsar1XgyqdyLJ8KMXEDAy1Ky)
 
-- **Prime game**
-
-  Is this number prime?
+- **Prime game** — Is this number prime?
 
   A number n is prime if it is greater than 1 and has no positive divisors except 1 and n.
 
-  To start game type ```brain-prime``` into terminal!
+  ```bash
+  brain-prime
+  ```
 
   [![asciicast](https://asciinema.org/a/cE13o3DioXg0zMCyQR5mXOZoT.png)](https://asciinema.org/a/cE13o3DioXg0zMCyQR5mXOZoT)
