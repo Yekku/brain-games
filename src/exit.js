@@ -2,15 +2,12 @@ import readlineSync from 'readline-sync';
 import chalk from 'chalk';
 import choice from './games/brain.js';
 
-const playOrExit = () => readlineSync.question(`Would You play another game?\n
-Answer "yes" for return to menu,
-Otherwise answer "no" for exit. `);
-
 const exit = () => {
-  if (playOrExit() === 'yes') {
-    choice();
+  const answer = readlineSync.question('\nPress Enter to play again or type "no" to exit: ').trim().toLowerCase();
+  if (answer === 'no') {
+    return console.log(chalk.yellow('Thank You!'));
   }
-  return console.log(chalk.yellow('Thank You!'));
+  return choice();
 };
 
 export default exit;

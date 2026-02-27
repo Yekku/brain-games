@@ -9,6 +9,9 @@ help:
 	@echo "  make start-balance     Launch balance game"
 	@echo "  make start-progression Launch progression game"
 	@echo "  make start-prime       Launch prime game"
+	@echo "  make start-fibonacci   Launch fibonacci game"
+	@echo "  make start-sqrt        Launch sqrt game"
+	@echo "  make start-binary      Launch binary game"
 	@echo "  make publish           Publish to npm"
 
 install:
@@ -41,5 +44,14 @@ start-progression:
 start-prime:
 	node src/bin/brain-prime.js
 
-.PHONY: help install publish lint start start-even start-calc start-gcd start-balance start-progression start-prime
+start-fibonacci:
+	node src/bin/brain-fibonacci.js
+
+start-sqrt:
+	node src/bin/brain-sqrt.js
+
+start-binary:
+	node src/bin/brain-binary.js
+
+.PHONY: help install publish lint start start-even start-calc start-gcd start-balance start-progression start-prime start-fibonacci start-sqrt start-binary
 .DEFAULT_GOAL := help

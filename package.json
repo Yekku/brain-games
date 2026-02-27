@@ -1,6 +1,6 @@
 {
   "name": "first-brain-games",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "Console mini brain games",
   "type": "module",
   "main": "src/index.js",
@@ -11,7 +11,10 @@
     "brain-gcd": "src/bin/brain-gcd.js",
     "brain-balance": "src/bin/brain-balance.js",
     "brain-progression": "src/bin/brain-progression.js",
-    "brain-prime": "src/bin/brain-prime.js"
+    "brain-prime": "src/bin/brain-prime.js",
+    "brain-fibonacci": "src/bin/brain-fibonacci.js",
+    "brain-sqrt": "src/bin/brain-sqrt.js",
+    "brain-binary": "src/bin/brain-binary.js"
   },
   "files": [
     "src"
